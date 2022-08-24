@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap">
+
+</head>
+
+<body>
+
+    <header>
+        <img src="Elementos/Vector-Logo-Alura.svg" alt="Logo alura, letra a">
+
+    </header>
+
+    <main>
+        <section>
+        <input id="campo-encriptacion" type="text" required placeholder="Ingrese el texto aqui">
+
+        <div class="botones">
+            
+            <!-- BOTONES PARA ENCRIPTAR 
+                >>Live Code Encriptador, ONE+Alura<< (Para probar este boton trasladar el conjunto de cierre a esta linea) -->  
+                
+            <input type="button" id="encriptar" onclick="botonEncriptar()" value="Encriptar">   
+            
+            <!-- 
+                >> Banderas (Para probar este boton trasladar el conjunto de cierre a esta linea)
+
+            <input type="button" id="encriptar" onclick="botonEncriptarDatos()" value="Encriptar"> --> 
+           
+           
+            <input type="button" id="desencriptar" onclick="botonDesencriptar()" value="Desencriptar">
+
+        </div>
+        
+   
+        </section>
+        
+        <section>
+            <input id="resultado-encriptado" type="text">
+            <input type="button" id="copiar" onclick="copiarDatos()" value="Copiar">
+        </section>
+        
+
+
+    </main>
+    <script src="script.js"></script>
+    <footer>
+        <p>Made in Honduras by Javier Gomez</p>
+
+    </footer>
+
+</body>
+</html>
+
