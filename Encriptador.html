@@ -21,31 +21,39 @@
     </header>
 
     <main>
-        <section>
-        <input id="campo-encriptacion" type="text" required placeholder="Ingrese el texto aqui">
+        <section class="izquierda">
+        
+            <textarea cols="40" rows="15" id="campo-encriptacion" required placeholder="Ingrese el texto aqui" minlength="1"></textarea>
 
-        <div class="botones">
+            <div class="botones">
             
-            <!-- BOTONES PARA ENCRIPTAR 
-                >>Live Code Encriptador, ONE+Alura<< (Para probar este boton trasladar el conjunto de cierre a esta linea) -->  
+                <!-- BOTONES PARA ENCRIPTAR 
+                    >>Live Code Encriptador, ONE+Alura<< (Para probar este boton trasladar el conjunto de cierre a esta linea)   
+                    
+                <input type="button" id="encriptar" onclick="botonEncriptar()" value="Encriptar">   -->
                 
-            <input type="button" id="encriptar" onclick="botonEncriptar()" value="Encriptar">   
+                <!-- 
+                    >> Banderas (Para probar este boton trasladar el conjunto de cierre a esta linea)--> 
+
+                <input type="button" id="encriptar" onclick="botonEncriptarDatos()" value="Encriptar"> 
             
-            <!-- 
-                >> Banderas (Para probar este boton trasladar el conjunto de cierre a esta linea)
+                <!-- BOTONES PARA DESENCRIPTAR 
+                    >>Live Code Encriptador, ONE+Alura<< (Para probar este boton trasladar el conjunto de cierre a esta linea) 
 
-            <input type="button" id="encriptar" onclick="botonEncriptarDatos()" value="Encriptar"> --> 
-           
-           
-            <input type="button" id="desencriptar" onclick="botonDesencriptar()" value="Desencriptar">
+                <input type="button" id="desencriptar" onclick="botonDesencriptar()" value="Desencriptar"> -->
 
-        </div>
+                <!-- 
+                    >> Banderas (Para probar este boton trasladar el conjunto de cierre a esta linea)--> 
+
+                <input type="button" id="desencriptar" onclick="botonDesencriptarDatos()" value="Desencriptar">
+
+            </div>
         
    
         </section>
         
-        <section>
-            <input id="resultado-encriptado" type="text">
+        <section class="derecha">
+            <textarea cols="15" rows="15" id="resultado-encriptado" readonly></textarea>
             <input type="button" id="copiar" onclick="copiarDatos()" value="Copiar">
         </section>
         

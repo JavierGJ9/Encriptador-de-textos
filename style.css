@@ -1,5 +1,40 @@
-/* Tipo de fuente: 
+body{
+        background: linear-gradient(90deg, rgba(3,1,23,1) 0%, rgba(10,7,65,0.8239670868347339) 20%, rgba(11,11,125,0.7399334733893557) 50%, rgba(13,110,115,0.7371323529411764) 80%, rgba(18,192,201,1) 100%);
         font-family: 'Inter', sans-serif;
-                                            */
+}
 
-                                            
+header{
+        position: relative;
+        margin: 0 auto;
+}
+
+main{
+        width: 940px;
+        position: relative;
+        margin: 0 auto;
+        background-color: rgba(18, 90, 153, 0.223);
+        border-style: solid;
+        border-radius: 15px;
+}
+
+.izquierda{
+        text-align: left;
+        margin: 0px;
+        width: 40%;
+}
+
+.derecha{
+        text-align: right;
+        margin: auto 0;
+        width: 40%;
+}
+
+#campo-encriptacion{
+        font-size: 24px;
+        /*border-style: none;*/
+        border-radius: 18px;
+        overflow: hidden;
+        background-color: rgba(188, 196, 202, 0.637);
+
+
+}
