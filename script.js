@@ -113,7 +113,11 @@ function botonEncriptarDatos(){
                                                  .replace(/u/gi, "ufat")
                                                  .toLowerCase(); // Bandera "g" para capturar toda la linea del input(texto), Bandera "i" para que ignore la igualdad estricta entre las vocales que seran reemplazadas, y el prototipo '.toLowerCase' para terminar de covertir toda la cadena en minusculas, ya que solo usando replace con banderas "gi" covierte solo las vocales de la cadena original en minusculas  
     resultadoEncriptado.value = campoEncriptado;
-    campoEncriptacion.value = "";
+    if( campoEncriptacion.value == ""){
+        alert("No hay mensaje por encriptar");
+    }else{
+        campoEncriptacion.value = "";
+    }
 }
 
 // FUNCIONES PARA DESENCRIPTAR Y SU BOTON 
@@ -126,7 +130,11 @@ function botonDesencriptarDatos(){
                                                  .replace(/ufat/gi, "u")
                                                  .toLowerCase();  
     resultadoEncriptado.value = campoEncriptado;
-    campoEncriptacion.value = "";
+    if( campoEncriptacion.value == ""){
+        alert("No hay mensaje por desencriptar");
+    }else{
+        campoEncriptacion.value = "";
+    }
 }
 
 /* Funcion Live Code Encriptador, ONE+Alura (for)(if)
@@ -198,8 +206,12 @@ function botonDesencriptarDatos(){
 */
 
     function copiarDatos(){
-        resultadoEncriptado.select();
-        navigator.clipboard.writeText(resultadoEncriptado.value);
-        resultadoEncriptado.value = "";
-        alert("Texto copiado");
+        if(resultadoEncriptado.value != ""){
+            resultadoEncriptado.select();
+            navigator.clipboard.writeText(resultadoEncriptado.value);
+            resultadoEncriptado.value = "";
+            alert("Texto copiado");  
+        }else{
+            alert("No hay texto por copiar")
+        }
     }

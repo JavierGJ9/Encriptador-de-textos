@@ -4,37 +4,106 @@ body{
 }
 
 header{
-        position: relative;
+        width: 940px;
         margin: 0 auto;
+        display: flex;
+        background-color: rgba(240, 248, 255, 0.297);
+        border-radius: 10px;
+}
+
+h1{
+        font-size: 28px;
+        font-weight: bold;
+        margin-top: 8px;
 }
 
 main{
         width: 940px;
-        position: relative;
+        display: flex;
         margin: 0 auto;
         background-color: rgba(18, 90, 153, 0.223);
         border-style: solid;
         border-radius: 15px;
+        
 }
 
 .izquierda{
-        text-align: left;
-        margin: 0px;
-        width: 40%;
+        margin: auto;
+        width: 60%;
 }
 
-.derecha{
-        text-align: right;
-        margin: auto 0;
-        width: 40%;
+::placeholder{
+        color: aqua;
 }
 
 #campo-encriptacion{
+        width: 100%;
         font-size: 24px;
-        /*border-style: none;*/
         border-radius: 18px;
         overflow: hidden;
-        background-color: rgba(188, 196, 202, 0.637);
-
-
+        background-color: rgba(41, 93, 103, 0.637);
+        resize: none;
+        border-style: none;
+        margin-top: 5px;
 }
+
+p{
+        margin-bottom: 10px;
+        font-weight: bold;
+        font-size: 20px;
+        background-color: rgba(240, 248, 255, 0.278);
+        text-align: center;
+        border-radius: 10px;
+}
+
+.botones{
+        text-align: center;
+}
+
+#encriptar{
+        width: 250px;
+        height: 30px;
+        border-radius: 18px;
+        background-color: rgb(23, 191, 196);
+        color: black;
+        font-weight: bold;
+        margin-bottom: 5px;
+}
+
+#desencriptar{
+        width: 250px;
+        height: 30px;
+        border-radius: 18px;
+        background-color: rgb(37, 23, 196);
+        color: white;
+        font-weight: bold;
+        margin-bottom: 5px;
+}
+
+.derecha{
+        width: 35%;
+        margin: auto;
+}
+
+#resultado-encriptado{
+        width: 100%;
+        font-size: 24px;
+        border-radius: 18px;
+        overflow: hidden;
+        background-color: rgba(34, 71, 175, 0.523);
+        resize: none;
+        border-style: none;
+        margin-top: 5px;
+}
+
+#copiar{
+        width: 330px;
+        height: 30px;
+        border-radius: 18px;
+        background-color: rgb(31, 52, 70);
+        color: white;
+        font-weight: bold;
+        margin-bottom: 5px;
+}
+
+

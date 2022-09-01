@@ -17,18 +17,20 @@
 
     <header>
         <img src="Elementos/Vector-Logo-Alura.svg" alt="Logo alura, letra a">
-
+        <h1>Alura Latam - ONE: Oracle Next Education - Encriptador de textos</h1>
     </header>
 
     <main>
         <section class="izquierda">
         
-            <textarea cols="40" rows="15" id="campo-encriptacion" required placeholder="Ingrese el texto aqui" minlength="1"></textarea>
+            <textarea cols="40" rows="15" id="campo-encriptacion" required placeholder="Ingrese el texto aqui" minlength="1" onkeypress="return (event.charCode == 241 || (event.charCode >= 97 && event.charCode <= 122))"></textarea>
+
+            <p>☺ Solo letras minúsculas y sin acentos</p>
 
             <div class="botones">
             
                 <!-- BOTONES PARA ENCRIPTAR 
-                    >>Live Code Encriptador, ONE+Alura<< (Para probar este boton trasladar el conjunto de cierre a esta linea)   
+                    >>Live Code Encriptador, ONE+Alura y alternativas<< (Para probar este boton trasladar el conjunto de cierre a esta linea)   
                     
                 <input type="button" id="encriptar" onclick="botonEncriptar()" value="Encriptar">   -->
                 
@@ -38,7 +40,7 @@
                 <input type="button" id="encriptar" onclick="botonEncriptarDatos()" value="Encriptar"> 
             
                 <!-- BOTONES PARA DESENCRIPTAR 
-                    >>Live Code Encriptador, ONE+Alura<< (Para probar este boton trasladar el conjunto de cierre a esta linea) 
+                    >>Live Code Encriptador, ONE+Alura y alternativas<< (Para probar este boton trasladar el conjunto de cierre a esta linea) 
 
                 <input type="button" id="desencriptar" onclick="botonDesencriptar()" value="Desencriptar"> -->
 
@@ -53,7 +55,8 @@
         </section>
         
         <section class="derecha">
-            <textarea cols="15" rows="15" id="resultado-encriptado" readonly></textarea>
+            <textarea cols="18" rows="15" id="resultado-encriptado" readonly placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Orci montes, sit et diam risus scelerisque vitae est. Tortor maecenas nunc ut laoreet. Eget diam mauris quam quisque ut eget fringilla sit elit. Libero, sodales duis fames id diam feugiat aliquet non egestas."></textarea>
+            <p>Hecho por Javier Gomez</p>
             <input type="button" id="copiar" onclick="copiarDatos()" value="Copiar">
         </section>
         
@@ -61,10 +64,6 @@
 
     </main>
     <script src="script.js"></script>
-    <footer>
-        <p>Made in Honduras by Javier Gomez</p>
-
-    </footer>
 
 </body>
 </html>
